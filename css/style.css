@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background: var(--Dark-cyan);
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.outside-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-left-top {
+  position: absolute;
+  top: -40%;
+  left: -10%;
+}
+
+.img-right-bottom {
+  position: absolute;
+  right: -20%;
+  bottom: -60%;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 500px;
+  background: white;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-bg {
+  height: 40%;
+  width: 100%;
+  background: url(../images/bg-pattern-card.svg) no-repeat center center / cover;
+  border-radius: 10;
+}
+
+.man-pic {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.man-pic img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.name-age {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  justify-content: center;
+  align-items: center;
+}
+
+.name-age ul {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.name {
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.gray {
+  color: var(--Dark-grayish-blue);
+}
+
+.location {
+  font-size: 16px;
+}
+
+.line {
+  position: absolute;
+  top: 80%;
+  height: 1px;
+  width: 100%;
+  background: var(--Dark-gray);
+}
+
+.number {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.number-bold {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.number-p {
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
